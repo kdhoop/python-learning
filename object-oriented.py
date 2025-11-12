@@ -57,7 +57,7 @@ class JediMaster(Padawan):
     all_masters = []
 
     def __init__(self, first, last, age, padawans=None):
-        super().__init__(first, last, age) # Inherit the instances from the master class
+        super().__init__(first, last, age) # # Call the parent class initializer to set inherited attributes
         JediMaster.num_of_jedi_masters += 1
         if padawans is None:
             self.padawans = []
